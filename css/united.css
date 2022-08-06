@@ -657,6 +657,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1643,6 +1651,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 5rem;
   }
 
+  .md\:mt-32 {
+    margin-top: 8rem;
+  }
+
   .md\:w-80 {
     width: 20rem;
   }
@@ -1691,5 +1703,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .\32xl\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .\32xl\:-mt-32 {
+    margin-top: -8rem;
   }
 }
