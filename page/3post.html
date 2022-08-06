@@ -1,0 +1,177 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./../css/bulma.css">
+    <style >
+
+    .container .columns {
+        margin: 3rem 0;
+    }
+    .bg-color{
+        background-color: rgba(80, 118, 245, 0.774);
+    }
+    .is-rounded {
+        border-radius: 1.2em;
+    }
+    .txt-color{
+        color: white;
+    }
+    .margin-0{
+        margin:0;
+    }
+    .mini{
+        font-size: .7em;
+    }
+    .text-right{
+        text-align: right;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .text-left{
+        text-align: left;
+    }
+    .mypost{
+        background-color: white;
+        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+        color: #4a4a4a;
+        display: block;
+        padding: .25rem 1rem;
+        border-radius: 1.2em;
+    }
+    .mypost-show{
+        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+        color: #ffffff;
+        display: block;
+        padding: .7rem 1.5rem;
+        right: 0;
+    }
+
+
+    .bg-color{
+        background-color: rgba(44, 63, 240, 0.781);
+    }
+    .padding-right{
+        padding-right: 2em;
+    }
+    .justpost{
+        word-break: break-word;
+    }
+
+    .bottom-pad-1rem{
+        padding-bottom: .7rem;
+    }
+    .bottom-pad-dot3rem{
+        padding-bottom: .3rem;
+    }
+
+    .top-pad-1rem{
+        padding-top: 1rem;
+
+    }
+
+    .top-pad-dot3rem{
+        padding-top: .3rem;
+    }
+
+    .text-area{
+        resize: vertical;
+    }
+    .width-fit-content{
+        width: fit-content;
+        
+    }
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Divide and conquer style , each component of the web -->
+    
+    <div class="container" >
+        <div class="columns">
+            <div class="column is-4">
+                <a class="button is-primary is-block is-alt is-large" href="#">New Story</a>
+            </div>
+
+            <div class="column is-8">
+                <div class="mypost content txt-color margin-0"> 
+                    <div class="container top-pad-1rem">
+                        <form action="" method="post">
+                            <div class="field">
+                                <div class="control ">
+                                <textarea class="input is-medium justpost text-area"  name="mypost" id="mypost" cols="35" wrap="soft" placeholder="Your thoughts :"></textarea>
+                                </div>
+                            </div>
+                            <button class="button is-primary is-block is-alt is-medium is-fullwidth" type="submit">Submit</button>
+                        </form>
+                    </div>
+                    
+                </div>
+                
+                <div class="container justpost bottom-pad-1rem">
+                
+                    <div class="mypost-show bg-color is-rounded text-left width-fit-content">
+                        <p>Testasdfsafasfsdfasfasfdafasfasfsadfsafasfasfdasasdfasdfasdfasfasff
+DAsadfasdfasfasdfasfasfasfdasfdasfasfasfasfsfdsssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+                        <div class="mini text-right top-pad-dot3rem">
+                            <p >@Jenkin 11/1/2011 8:04pm</p>              
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container justpost bottom-pad-1rem">
+                    <div class="mypost-show bg-color is-rounded text-left width-fit-content">
+                        <p>Test</p>
+                        <div class="mini text-right top-pad-dot3rem">
+                            <p >@Jenkin 11/1/2011 8:04pm</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="container justpost bottom-pad-1rem">
+                    <div class="mypost-show bg-color is-rounded text-left width-fit-content">
+                        <p>
+                            If installed properly, this process shouldalways be running. The second is the Docker CLI . This is the Docker program thatusers interact with. If you want to start, stop, or install software, you’ll issue a com-mand using the Docker program.
+                        </p>
+                        <div class="mini text-right padding-right top-pad-dot3rem">
+                            <p>@Jenkin 11/1/2011 8:04pm</p>
+                        </div> 
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+<script type="text/javascript">
+    textarea = document.querySelector("#mypost");
+    textarea.addEventListener('input', autoResize, false);
+    
+    function autoResize() {
+        this.style.height = 'auto';
+        this.style.height = this.scrollHeight + 'px';
+    }
+</script>
+
+<script src="{% static 'script/myjs.js' %}"></script>
+</body>
+</html>

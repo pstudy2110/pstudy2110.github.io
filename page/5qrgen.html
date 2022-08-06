@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/united.css" rel="stylesheet">
+  <style>
+    .artplayer-app {
+        width: 800px;
+        height: 450px;
+    }
+  </style>
+</head>
+<body class="bg-cyan-500">
+    <!---->
+    <div class="container w-full h-full">
+        <div class="flex flex-row flex-wrap sm:flex-col  justify-center content-center ">
+            <div class="w-96 flex flex-col mt-20 bg-orange-300 p-10 opacity-90 rounded-2xl">
+                <p class="text-gray-800 text-lg font-medium mb-2">
+                    Text to Qr
+                </p>
+                <form action="#" autoComplete="off">
+                    <div class="flex flex-row mb-2 items-center">
+                        
+                        <div class="shadow-lg rounded-2xl w-full p-4 bg-white relative overflow-hidden">
+
+                                <textarea class="flex-1 appearance-none border border-gray-300 w-full py-2 px-2 bg-white text-gray-700 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" id="inputMessage" name="inputMessage" rows="5" cols=""></textarea>
+                        </div>
+                    </div>
+                        <div class="flex w-full">
+                            <button type="submit" class="py-2 px-4  bg-green-300 hover:bg-green-500 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg " onclick="Submit()">
+                                Convert
+                            </button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row flex-wrap sm:flex-col  justify-center content-center my-28">
+        <div>
+            <a class="font-bold text-center text-xl">In Action</a>
+        </div>
+        <div class="artplayer-app"></div>
+    
+    </div>
+    <script src="./../js/artplayer.js"></script>
+    <script src="./../js/artplayer-plugin-danmuku.js"></script>
+    <script>
+        var art = new Artplayer({
+            container: '.artplayer-app',
+            url: './../video/5qrgen.mkv',
+            poster: './../img/videoalt.jpg',
+            playbackRate: true,
+            hotkey: true,
+            setting: true,
+            fullscreen: true,
+            miniProgressBar: true,
+                
+        });
+  
+    </script>
+</body>
+</html>
