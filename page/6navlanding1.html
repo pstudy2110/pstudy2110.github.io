@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/united.css" rel="stylesheet">
+  <link href="" rel="stylesheet">
+  <style>
+        @media screen and (max-width: 900px) {
+            .nav-items{
+                display: none;
+            }
+            .landing1{
+            height: calc(100vh - 20rem)
+        }
+        }
+
+        @media screen and (min-width: 900px) {
+            .nav-button{
+                display: none;
+            }
+        }
+        .color{
+            color: beige;
+        }
+
+        .hide{
+            display: hidden;
+        }
+
+     
+
+        .listanim{
+            left: -20rem;
+        }
+  </style>
+</head>
+<body class="mobile-off">
+    <div class="nav-on fixed top-0 w-full h-full bg-slate-300 flex flex-grow z-20 opacity-70 hidden" >
+        <div class="flex flex-grow justify-start h-full text-2xl ">
+
+        </div>
+    </div>
+    <div class="nav-on2 fixed top-0 w-full h-full flex flex-grow z-50  hidden" >
+        <div class="flex flex-grow justify-start h-full text-2xl ">
+            <div class="bg-purple-200 w-2/3 sm:w-1/3 md:w-1/3 lg:w-1/3  opacity-100">
+                <div class="flex flex-grow flex-col pt-10 listanim">
+                    <div class="container py-2">
+                        <a href="#" class="ml-5 py-1 font-semibold hover:ml-10 hover:scale-125 scale-100 duration-200 hover:text-blue-500">Home</a>
+                    </div>
+                    <div class="container py-2">
+                        <a href="#" class="ml-5 py-1 font-semibold hover:ml-10 hover:scale-125 scale-100 duration-200 hover:text-blue-500">Login</a>
+                    </div>
+                    <div class="container py-2">
+                        <a href="#" class="ml-5 py-1 font-semibold hover:ml-10 hover:scale-125 scale-100 duration-200 hover:text-blue-500">Signup</a>
+                    </div>
+                    <div class="container py-2">
+                        <a href="#" class="ml-5 py-1 font-semibold hover:ml-10 hover:scale-125 scale-100 duration-200 hover:text-blue-500">About Us</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-grow h-full justify-end" onclick="navOn()">
+                <div class="">
+                    <div class="container pr-5 pt-3">
+                        <a  class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path class="heroicon-ui" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2zm0 2v14h14V5H5zm8.41 7l1.42 1.41a1 1 0 1 1-1.42 1.42L12 13.4l-1.41 1.42a1 1 0 1 1-1.42-1.42L10.6 12l-1.42-1.41a1 1 0 1 1 1.42-1.42L12 10.6l1.41-1.42a1 1 0 1 1 1.42 1.42L13.4 12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       
+    </div>
+
+    <!-- Real page Start -->
+    <div>
+        <nav class="flex flex-grow bg-white w-full pt-3 fixed top-0 nav-on3 z-10">
+            <div class="flex flex-grow justify-start h-full text-2xl ">
+                <a class="mx-4 font-semibold"> Name</a>
+
+            </div>
+            <div class="flex flex-grow justify-end h-full text-2xl font-light nav-items">
+                <div class="flex flex-row py-1">
+                    <div class="mx-4  hover:border-b-4 hover:border-purple-400 duration-300">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="mx-4  hover:border-b-4 hover:border-purple-400 duration-300">
+                        <a href="#">Login</a>
+                    </div>
+                    <div class="mx-4 hover:border-b-4 hover:border-purple-400 duration-300">
+                        <a href="#">Signup</a>
+                    </div>
+                    <div class="mx-4 hover:border-b-4 hover:border-purple-400 duration-300">
+                        <a href="#"> About Us</a>
+                    </div>
+                    <div class="w-10"></div>
+                </div>
+            </div>
+            <div class="nav-button">
+                <div class="container pr-5">
+                    <a  class="" onclick="navOn()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="30" height="30" class="hover:text-purple-600 text-gray-400 duration-500"><path class="" d="M18 21H7a4 4 0 0 1-4-4V5c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2h2a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3zm-3-3V5H5v12c0 1.1.9 2 2 2h8.17a3 3 0 0 1-.17-1zm-7-3h4a1 1 0 0 1 0 2H8a1 
+                        1 0 0 1 0-2zm0-4h4a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm0-4h4a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2zm9 11a1 1 0 0 0 2 0V7h-2v11z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+    </div>
+    <div class="landing1 mt-5 sm:mt-14 md:mt-20 lg:mt-20 2xl:mt-20  flex flex-col justify-center content-center absolute items-center w-full">
+      
+        <a class="text-2xl font-thin font-mono text-center"> This is just a sentence. </a>
+
+        <div class="container flex justify-center pt-5">
+            <img  class="w-2/3" src="../img/videoalt.jpg">
+        </div>
+    </div>
+    <script>
+        function navOn() { 
+          document.querySelector(".nav-on").classList.toggle("hidden");
+          document.querySelector(".nav-on2").classList.toggle("hidden");
+          document.querySelector(".nav-on3").classList.toggle("hidden");
+        }
+  </script>
+</body>
+</html>
